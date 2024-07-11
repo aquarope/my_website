@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    font-size: 30px;
+}
+.rink {
+    background-color:#71cc9b;
+    color: black;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 30px;
+}
+body{
+    background-color: beige;
+}
+#m {
+    text-align: center;
+    padding: 30px 100px;
+    background-color:#71cc9b;
+    color: black;
+    display: inline-block;
+    border-bottom: 2px solid black;   
+    margin: 0px;           
+}
+.bttn {
+    float: right;
+    width: 200px;
+    height: 50px;
+    
+    font-size: 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    border: 1px solid gray;
+}
+#turtle{
+    color:red;
+    text-decoration: none;
+}

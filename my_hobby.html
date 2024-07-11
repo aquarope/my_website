@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>게임</title>
+        <style>
+            body {
+                background-color: beige;
+            }
+        </style>
+        <script>
+            var Stunlock_Studios = ["V rising"];
+            var PocketPair = ["palworld"];
+            var Blizzard_Entertainment = ["overwatch 1","overwatch 2","Heroes of the storm","Herthstone"];
+            var kids_jjang = ["market_play"];
+            var Mojang_Studios = ["minecraft"];
+            var Panic_Button = ["subnautica-below zero"];
+            var Riot_Games = ['valorant'] 
+            var Ndemic_Creations = ["Plague Inc."]
+
+            
+            var PVP = ['Blizzard_Entertainment','Riot_Games'];
+            const arr1 = [];
+            arr1.push(Blizzard_Entertainment)
+            arr1.push(Riot_Games)
+            
+            var simulation = ['kids_jjang','Ndemic_Creations']
+            const arr2 = [];
+            arr2.push(kids_jjang)
+            arr2.push(Ndemic_Creations)
+          
+            
+            var survival = ['Stunlock_Studios','PocketPair','Mojang_Studios','Panic_Button']
+            const arr3 = [];
+            arr3.push(Stunlock_Studios)
+            arr3.push(PocketPair)
+            arr3.push(Mojang_Studios)
+            arr3.push(Panic_Button)
+
+
+        </script>
+
+        <style>
+            h1{
+                text-align: center;
+            }
+            a{
+                text-decoration: none;
+            }
+            .back{
+                color: red;
+                font-size: 20px;
+            }
+            #grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            @media (max-width:900px)
+            {#grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+            }}
+            @media (max-width:650px)
+            {#grid{
+                display: block;
+                
+            }}
+        </style>
+     </head>
+     <body>
+        <a href = "main_page.html" class = "back" >메인 화면으로  돌아가기> </a>
+        <h1>내가 한 게임</h1>
+
+        <div id = "grid">
+            <div  id = "a">
+            <h2>PVP GAME</h2>
+            <script>
+                i = 0;
+                while(i < PVP.length){
+                    document.write(PVP[i]+'<br>');
+                    j = 0;
+                    while(j < arr1[i].length){
+                        document.write('<li>'+arr1[i][j]+'<br>');
+                        j = j + 1;
+                        }
+                    i = i + 1;
+                }
+            </script>
+            </div>
+        
+        
+            <div  id = "b">
+            <h2>SIMULATION GAME</h2>
+            <script>
+                i = 0;
+                while(i < simulation.length){
+                    document.write(simulation[i]+'<br>');
+                    j = 0;
+                    while(j < arr2[i].length){
+                        document.write('<li>'+arr2[i][j]+'<br>');
+                        j = j + 1;
+                        }
+                    i = i + 1;
+                }
+            </script>
+            </div>  
+        
+    
+            <div  id = "c">
+            <h2>SURVIVAL GAME</h2>
+            <script>
+                i = 0;
+                while(i < survival.length){
+                    document.write(survival[i]+'<br>');
+                    j = 0;
+                    while(j < arr3[i].length){
+                        document.write('<li>'+arr3[i][j]+'<br>');
+                        j = j + 1;
+                        }
+                    i = i + 1;
+                }
+            </script>
+            </div>   
+           
+    </body>
+</html>
